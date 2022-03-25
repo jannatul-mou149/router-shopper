@@ -1,0 +1,9 @@
+.cart-product{
+    position: sticky;
+    top: 0;
+}
+.cart-product li{
+    margin-left: 40px;
+    line-height: 2rem;
+    font-size: 18px;
+}
