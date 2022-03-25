@@ -21,12 +21,15 @@
     margin-left: 20px;
 }
 .cart-btn{
+    color:rgb(49, 49, 49);
+    font-size: 16px;
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color:lightgreen;
     border: none;
     border-radius: 0 0 8px 8px;
+    cursor: pointer;
 }
 .cart-btn:hover{
     background-color: #95A0A7;

@@ -37,6 +37,13 @@ const Main = () => {
                         singleProduct={singleProduct}
                     ></Cart>)
                 }
+                {
+                    <div>
+                        <button className='other-btn'>Choose 1 For Me</button>
+                        <button className='other-btn'>Choose Again</button>
+                    </div>
+
+                }
             </div>
         </div>
     );

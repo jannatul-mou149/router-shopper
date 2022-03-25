@@ -17,3 +17,35 @@
 .cart h2{
     text-align: center;
 }
+.other-btn{
+    background-color: transparent;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.other-btn:hover{
+    background-color: #95A0A7;
+    color: aliceblue;
+}
+
+@media screen and (min-width:689px) and (max-width: 1180px){
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .cart{
+        grid-template-columns: 1fr;
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width:350px) and (max-width:680px){
+    .products{
+        grid-template-columns: 1fr;
+    }
+    .cart{
+        grid-template-columns: 1fr;
+    }
+}
