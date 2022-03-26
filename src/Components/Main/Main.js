@@ -14,8 +14,13 @@ const Main = () => {
     }, [])
 
     const handleAddToCart = (product) => {
-        const newProduct = [...cart, product.name];
-        setCart(newProduct);
+        if (cart.length < 4) {
+            if (!cart.includes(product.name)) {
+
+                const newProduct = [...cart, product.name];
+                setCart(newProduct);
+            }
+        }
     }
 
     const randomChoose = () => {
