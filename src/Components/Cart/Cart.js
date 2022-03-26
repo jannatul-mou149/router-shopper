@@ -3,6 +3,7 @@ import './Cart.css'
 
 const Cart = (props) => {
     const { singleProduct } = props;
+
     return (
 
         <div className='cart-product'>

@@ -17,6 +17,9 @@ const Main = () => {
         setCart(newName);
     }
 
+    //clear shopping cart
+    const clearCart = () => setCart([]);
+
     return (
         <div className='main-container'>
             <div className="products">
@@ -40,7 +43,7 @@ const Main = () => {
                 {
                     <div>
                         <button className='other-btn'>Choose 1 For Me</button>
-                        <button className='other-btn'>Choose Again</button>
+                        <button onClick={clearCart} className='other-btn'>Choose Again</button>
                     </div>
 
                 }
