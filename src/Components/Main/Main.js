@@ -22,7 +22,6 @@ const Main = () => {
         let randomChoose = cart[Math.floor(Math.random() * cart.length)];
         setChoose(randomChoose);
     }
-    console.log(choose);
     //clear shopping cart
     const clearCart = () => setCart([]);
 
@@ -54,7 +53,7 @@ const Main = () => {
                     </div>
                 }
                 {
-                    <div>
+                    <div className='btn-container'>
                         <button onClick={randomChoose} className='other-btn'>Choose 1 For Me</button>
                         <button onClick={clearCart} className='other-btn'>Choose Again</button>
                     </div>

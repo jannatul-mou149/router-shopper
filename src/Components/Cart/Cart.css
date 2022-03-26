@@ -1,5 +1,4 @@
 .cart-product{
-    display: flex;
     position: sticky;
     top: 0;
 }
@@ -9,7 +8,4 @@
     line-height: 2rem;
     font-size: 18px;
     font-weight: 500;
-}
-.cart-product img{
-    width: 70px;
 }
