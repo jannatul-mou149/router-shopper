@@ -9,10 +9,10 @@
 }
 .cart{
     border-radius: 8px;
-    border: 1px solid #95A0A7;
+    box-shadow: 2px 5px 20px 0.1px rgba(128, 128, 128, 0.534);
     margin-top: 20px;
     margin-right: 10px;
-    height: 600px;
+    height: 800px;
 }
 .cart h2{
     text-align: center;
@@ -25,6 +25,7 @@
     font-size: 16px;
     padding: 10px 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .other-btn:hover{

@@ -14,8 +14,8 @@ const Main = () => {
     }, [])
 
     const handleAddToCart = (product) => {
-        const newName = [...cart, product.name];
-        setCart(newName);
+        const newProduct = [...cart, product.name];
+        setCart(newProduct);
     }
 
     const randomChoose = () => {
@@ -23,7 +23,10 @@ const Main = () => {
         setChoose(randomChoose);
     }
     //clear shopping cart
-    const clearCart = () => setCart([]);
+    const clearCart = () => {
+        setCart([]);
+        setChoose([]);
+    }
 
     return (
         <div className='main-container'>

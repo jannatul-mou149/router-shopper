@@ -1,11 +1,14 @@
 .cart-product{
+    display: flex;
     position: sticky;
     top: 0;
+    box-shadow: 2px 5px 20px 0.1px rgba(128, 128, 128, 0.534);
+    margin: 10px 40px;
 }
 .cart-product p{
     margin-left: 60px;
     margin-bottom: 20px;
     line-height: 2rem;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
