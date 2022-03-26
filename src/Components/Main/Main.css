@@ -31,6 +31,12 @@
     background-color: #95A0A7;
     color: aliceblue;
 }
+.lucky-router{
+    text-align: center;
+}
+.lucky-router h4{
+    color:blueviolet;
+}
 
 @media screen and (min-width:689px) and (max-width: 1180px){
     .products{
@@ -46,7 +52,13 @@
     .products{
         grid-template-columns: 1fr;
     }
-    .cart{
+    /* .cart{
         grid-template-columns: 1fr;
+    } */
+    .main-container{
+        display: flex;
+        flex-wrap:wrap-reverse;
+        margin: 0 auto;
+        align-items: flex-start;
     }
 }

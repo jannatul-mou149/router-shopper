@@ -1,12 +1,14 @@
 import './App.css';
+import Bonus from './Components/Bonus/Bonus';
 import Main from './Components/Main/Main';
-import Nav from './Components/Nav/Nav';
-
 function App() {
   return (
     <div>
-      <Nav></Nav>
+      <div class="one">
+        <h1>Router Shopper</h1>
+      </div>
       <Main></Main>
+      <Bonus></Bonus>
     </div>
   );
 }

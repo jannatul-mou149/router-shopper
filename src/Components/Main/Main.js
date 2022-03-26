@@ -5,6 +5,7 @@ import './Main.css'
 const Main = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [choose, setChoose] = useState([]);
 
     useEffect(() => {
         fetch('products.json')
@@ -17,6 +18,11 @@ const Main = () => {
         setCart(newName);
     }
 
+    const randomChoose = () => {
+        let randomChoose = cart[Math.floor(Math.random() * cart.length)];
+        setChoose(randomChoose);
+    }
+    console.log(choose);
     //clear shopping cart
     const clearCart = () => setCart([]);
 
@@ -38,11 +44,18 @@ const Main = () => {
                 {
                     cart.map(singleProduct => <Cart
                         singleProduct={singleProduct}
+                        key={singleProduct.id}
                     ></Cart>)
                 }
                 {
+                    <div className='lucky-router'>
+                        <h1>Your Lucky Router is: </h1>
+                        <h4>{choose}</h4>
+                    </div>
+                }
+                {
                     <div>
-                        <button className='other-btn'>Choose 1 For Me</button>
+                        <button onClick={randomChoose} className='other-btn'>Choose 1 For Me</button>
                         <button onClick={clearCart} className='other-btn'>Choose Again</button>
                     </div>
 
